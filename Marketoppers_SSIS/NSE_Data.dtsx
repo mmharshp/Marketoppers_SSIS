@@ -7,12 +7,12 @@
   DTS:CreatorName="MAGNUSMINDS005\MagnusMinds"
   DTS:DTSID="{38F17701-1CB7-4EBD-B291-2C036D792789}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{1325D7AC-1DE3-4477-A16A-C17DDE0EE450}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{21DCD758-8B0C-4D3B-842A-01EF85193C04}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Projects\SSIS Data Merge Assignment\NSE_IND_2012_Jan_Dec.csv">
+          DTS:ConnectionString="E:\Projects\SSISDataMergeAssignment\NSE_IND_2012_Jan_Dec_masked.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,87 +39,155 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Scrip_Name"
-              DTS:DTSID="{E60A7381-3756-4413-A184-CD8BFDFFFCA6}"
+              DTS:DTSID="{61291D43-5AD5-45B1-BD8B-DE886D7E6741}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DateTime"
-              DTS:DTSID="{59AC764D-F30C-4540-BB2E-7AD07214C28B}"
+              DTS:DTSID="{506D1BE8-ECE1-4DE1-BDFA-AC0C847C4540}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="O"
-              DTS:DTSID="{A395B0D6-FF06-4439-8943-215C70F3BE63}"
+              DTS:DTSID="{5D045D40-B1A8-473D-A523-2CED1FAE5555}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="H"
-              DTS:DTSID="{241C81D7-E621-4E03-B642-B299537FD2BC}"
+              DTS:DTSID="{DBB2BEF3-52DD-4ECF-BD0D-28648CC9C1D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="L"
-              DTS:DTSID="{89BEA2B5-3890-4439-9456-E20E465CD3A6}"
+              DTS:DTSID="{7B3728FB-8E8B-47B9-95FD-51FA449304DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="C"
-              DTS:DTSID="{4D5145F8-9CB2-4342-BBA3-5674453F8D93}"
+              DTS:DTSID="{FBD16BAA-A1EB-4DA9-98A7-E348B3F3425C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="V"
-              DTS:DTSID="{36EF5A88-2329-46AF-A693-476989A00429}"
+              DTS:DTSID="{975702F9-E6BF-4B53-A914-8EA1B0462DCF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Flag"
-              DTS:DTSID="{8CDB9A76-C80E-4CD6-8CDB-A53484263085}"
+              DTS:DTSID="{227AF3B0-B77C-47F3-8AE9-8CF39EBBA641}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
+      DTS:refId="Package.ConnectionManagers[mminfra,1983.Marketoppers_SSIS.sa1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{0FF11292-ECEC-41E8-87C6-94A2EB4AE884}"
-      DTS:ObjectName="MMINFRA,1983.Marketoppers_SSIS.sa">
+      DTS:DTSID="{FAC42472-01C5-4713-881E-773D4A1999C2}"
+      DTS:ObjectName="mminfra,1983.Marketoppers_SSIS.sa1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MMINFRA,1983;User ID=sa;Initial Catalog=Marketoppers_SSIS;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{0FF11292-ECEC-41E8-87C6-94A2EB4AE884}MMINFRA,1983.Marketoppers_SSIS.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=mminfra,1983;User ID=sa;Initial Catalog=Marketoppers_SSIS;Provider=SQLOLEDB.1;Application Name=SSIS-Package1-{FAC42472-01C5-4713-881E-773D4A1999C2}mminfra,1983.Marketoppers_SSIS.sa1;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwA5g4wwBVEC7I/e4Lcj2MgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC9dEth3jPu6z9O4SOAd7GS2zPmKXLGeXIwiqyqtBCGiQAAAAAOgAAAAAIAACAAAAA0e0b/oStl/KD0foHesb8s4NOlSibdbXgbsE6L4dF4QCAAAADGEnNThDl8hnV1THWe+EFRwaJhqRQ9dcqpp8li/IlW5kAAAAC454QqLDps0r2StMDMSuqQ+ZBMHhV/0WjC5H/Gy9oHhxVmjKpECHHqwzFhFwxzo2apIh6xbDtPkm2cnNYNrmlh</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEpkRxsOTNU2JSx7AfFN98gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9gsU4oAxSls7EDlEkL84DsLXo5SxmY48tlwznf6CkIgAAAAAOgAAAAAIAACAAAABQxu0DaHD1OrziQ4D4aceba29QFyRMAqDEgY9ZPzFHDyAAAABdLq9j4Iumu1yoMznJTjxKBZ57jsfSLZkatf/kQNSxiEAAAABWcsrYmVtv8Ke7OlF+6FYW+g/oKGWlH7hZzC89URVV4qXb0QB5ZAAOGR2Qve3HUYx8pcHadmOOea0JpCqA7qxl</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">3,7,OnError,13,OnInformation,13,OnPostExecute</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnInformation"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostExecute"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+  </DTS:LoggingOptions>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\DFT_NSE_Data_Export"
@@ -131,192 +199,871 @@
       DTS:ObjectName="DFT_NSE_Data_Export"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0"
+        DTS:LoggingMode="1" />
       <DTS:ObjectData>
         <pipeline
           version="1">
           <components>
             <component
-              refId="Package\DFT_NSE_Data_Export\DST_NSE_Data"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="DST_NSE_Data"
+              refId="Package\DFT_NSE_Data_Export\DST_NSEData"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="DST_NSEData"
               usesDispositions="true"
-              version="4">
+              version="2">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
                   dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[NSE_Data_2012]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."NSE_Data"</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
                 <property
                   dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
                 <property
                   dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData.Connections[IDbConnection]"
+                  connectionManagerID="{4170AF87-BCA4-4689-8D3F-9D6C56053204}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
-                  name="OLE DB Destination Input">
+                  name="ADO NET Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[Scrip_Name]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[Scrip_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Scrip_Name"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[Scrip_Name]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]" />
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[Scrip_Name]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Scrip_Name]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[DateTime]"
-                      cachedDataType="date"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[DateTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="DateTime"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[DateTime]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]" />
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[DateTime]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[DateTime]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[O]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[O]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="O"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[O]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[O]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[O]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[H]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[H]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="H"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[H]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[H]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[H]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[L]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[L]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="L"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[L]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[L]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[L]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[C]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[C]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="C"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[C]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[C]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[C]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[V]"
-                      cachedDataType="i4"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[V]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="V"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[V]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[V]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[V]" />
                     <inputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].Columns[Flag]"
-                      cachedDataType="bool"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[Flag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="Flag"
-                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[Flag]"
-                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]" />
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[Flag]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Flag]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].Columns[SecID]"
+                      cachedDataType="i8"
+                      cachedName="SecID"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[SecID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[Scrip_Name]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[Seq]"
+                      dataType="i8"
+                      name="Seq" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
+                      dataType="i8"
+                      name="SecID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[Scrip_Name]"
+                      dataType="wstr"
                       length="50"
                       name="Scrip_Name" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[DateTime]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[DateTime]"
                       dataType="dbTimeStamp"
                       name="DateTime" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[O]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[O]"
                       dataType="r8"
                       name="O" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[H]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[H]"
                       dataType="r8"
                       name="H" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[L]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[L]"
                       dataType="r8"
                       name="L" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[C]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[C]"
                       dataType="r8"
                       name="C" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[V]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[V]"
                       dataType="i4"
                       name="V" />
                     <externalMetadataColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input].ExternalColumns[Flag]"
-                      dataType="bool"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input].ExternalColumns[Flag]"
+                      dataType="i4"
                       name="Flag" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData.Outputs[ADO NET Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input]">
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_NSE_Data_Export\DST_NSEData.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_NSE_Data_Export\DST_NSEData.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_NSE_Data_Export\DST_NSEData 1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="DST_NSEData 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."NSE_Data_NotMatched"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Connections[IDbConnection]"
+                  connectionManagerID="{4170AF87-BCA4-4689-8D3F-9D6C56053204}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[Scrip_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Scrip_Name"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[Scrip_Name]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[DateTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DateTime"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[DateTime]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[O]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="O"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[O]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[H]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="H"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[H]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[L]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="L"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[L]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[C]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="C"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[C]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[V]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="V"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[V]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]" />
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].Columns[Flag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Flag"
+                      externalMetadataColumnId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[Flag]"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[Scrip_Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Scrip_Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[DateTime]"
+                      dataType="dbTimeStamp"
+                      name="DateTime" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[O]"
+                      dataType="r8"
+                      name="O" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[H]"
+                      dataType="r8"
+                      name="H" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[L]"
+                      dataType="r8"
+                      name="L" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[C]"
+                      dataType="r8"
+                      name="C" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[V]"
+                      dataType="i4"
+                      name="V" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input].ExternalColumns[Flag]"
+                      dataType="i4"
+                      name="Flag" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_NSE_Data_Export\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[SecurityMaster]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[SecurityMaster]) [refTable]
+where [refTable].[SCRIP_NAME] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Seq" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SecID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SCRIP_NAME" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LotSize" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExchangeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MaxExposure" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Industry_Id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MF_Cash" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MF_Fut" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Cash_Scrip_Code" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DevisionValue" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LINKNAME" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_NSE_Data_Export\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[mminfra,1983.Marketoppers_SSIS.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[mminfra,1983.Marketoppers_SSIS.sa1]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input].Columns[Scrip_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Scrip_Name"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">SCRIP_NAME</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output].Columns[SecID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output].Columns[SecID]"
+                      name="SecID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">SecID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_NSE_Data_Export\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[Scrip_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Scrip_Name"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[DateTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DateTime"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[O]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="O"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[H]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="H"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[L]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="L"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[C]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="C"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[V]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="V"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[Flag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Flag"
+                      lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input].Columns[SecID]"
+                      cachedDataType="i8"
+                      cachedName="SecID"
+                      lineageId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output].Columns[SecID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Scrip_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Scrip_Name]"
+                      name="Scrip_Name"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Scrip_Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[DateTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[DateTime]"
+                      name="DateTime"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[O]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[O]"
+                      name="O">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[H]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[H]"
+                      name="H">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[L]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[L]"
+                      name="L">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[C]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[C]"
+                      name="C">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[V]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[V]"
+                      name="V">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Flag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[Flag]"
+                      name="Flag">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[SecID]"
+                      dataType="i8"
+                      lineageId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output].Columns[SecID]"
+                      name="SecID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output].Columns[SecID]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -377,10 +1124,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[DateTime]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[DateTime]"
                       name="DateTime"
                       truncationRowDisposition="FailComponent">
@@ -397,10 +1146,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[O]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[O]"
                       name="O"
                       truncationRowDisposition="FailComponent">
@@ -417,10 +1168,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[H]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[H]"
                       name="H"
                       truncationRowDisposition="FailComponent">
@@ -437,10 +1190,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[L]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[L]"
                       name="L"
                       truncationRowDisposition="FailComponent">
@@ -457,10 +1212,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[C]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[C]"
                       name="C"
                       truncationRowDisposition="FailComponent">
@@ -477,10 +1234,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[V]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[V]"
                       name="V"
                       truncationRowDisposition="FailComponent">
@@ -497,10 +1256,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]"
-                      dataType="bool"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[Flag]"
+                      length="50"
                       lineageId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].Columns[Flag]"
                       name="Flag"
                       truncationRowDisposition="FailComponent">
@@ -526,31 +1287,45 @@
                       name="Scrip_Name" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[DateTime]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="DateTime" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[O]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="O" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[H]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="H" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[L]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="L" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[C]"
-                      dataType="r8"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="C" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[V]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="V" />
                     <externalMetadataColumn
                       refId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output].ExternalColumns[Flag]"
-                      dataType="bool"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="Flag" />
                   </externalMetadataColumns>
                 </output>
@@ -587,14 +1362,56 @@
           <paths>
             <path
               refId="Package\DFT_NSE_Data_Export.Paths[Flat File Source Output]"
-              endId="Package\DFT_NSE_Data_Export\DST_NSE_Data.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT_NSE_Data_Export\Lookup.Inputs[Lookup Input]"
               name="Flat File Source Output"
               startId="Package\DFT_NSE_Data_Export\SRC_NSE_Data.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\DFT_NSE_Data_Export.Paths[Lookup Match Output]"
+              endId="Package\DFT_NSE_Data_Export\Sort.Inputs[Sort Input]"
+              name="Lookup Match Output"
+              startId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\DFT_NSE_Data_Export.Paths[Lookup No Match Output]"
+              endId="Package\DFT_NSE_Data_Export\DST_NSEData 1.Inputs[ADO NET Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\DFT_NSE_Data_Export\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\DFT_NSE_Data_Export.Paths[Sort Output]"
+              endId="Package\DFT_NSE_Data_Export\DST_NSEData.Inputs[ADO NET Destination Input]"
+              name="Sort Output"
+              startId="Package\DFT_NSE_Data_Export\Sort.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_Truncate_NSEData"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{be364758-de49-4bb9-a558-cfb5f45ce456}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_Truncate_NSEData"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4170AF87-BCA4-4689-8D3F-9D6C56053204}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[NSE_Data]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{201C0F41-6B3E-499F-81DA-494D336CEDD7}"
+      DTS:From="Package\EST_Truncate_NSEData"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DFT_NSE_Data_Export" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -606,41 +1423,41 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="196,42"
           Id="Package\DFT_NSE_Data_Export"
-          TopLeft="329,135" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\DFT_NSE_Data_Export">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+          TopLeft="275,238" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\DFT_NSE_Data_Export\SRC_NSE_Data"
-          TopLeft="337,68" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\DFT_NSE_Data_Export\DST_NSE_Data"
-          TopLeft="339.5,254.5" />
+          Size="229,42"
+          Id="Package\EST_Truncate_NSEData"
+          TopLeft="236,115" />
         <EdgeLayout
-          Id="Package\DFT_NSE_Data_Export.Paths[Flat File Source Output]"
-          TopLeft="418,110">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="350.5,157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,144.5"
+              EndConnector="22.5,81"
               Start="0,0"
-              End="0,137">
+              End="22.5,73.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,137" />
+                    End="0,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.5"
+                    Point2="0,40.5"
+                    Point3="4,40.5" />
+                  <mssgle:LineSegment
+                    End="18.5,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,40.5"
+                    Point2="22.5,40.5"
+                    Point3="22.5,44.5" />
+                  <mssgle:LineSegment
+                    End="22.5,73.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -651,17 +1468,199 @@
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_NSE_Data_Export">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\DFT_NSE_Data_Export\DST_NSEData 1"
+          TopLeft="539,338" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\DFT_NSE_Data_Export\Lookup"
+          TopLeft="491,101" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\DFT_NSE_Data_Export\DST_NSEData"
+          TopLeft="141,327" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\DFT_NSE_Data_Export\SRC_NSE_Data"
+          TopLeft="302,29" />
+        <EdgeLayout
+          Id="Package\DFT_NSE_Data_Export.Paths[Flat File Source Output]"
+          TopLeft="382,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="166.5,30"
+              Start="0,0"
+              End="166.5,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="4,15" />
+                  <mssgle:LineSegment
+                    End="162.5,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="162.5,15"
+                    Point2="166.5,15"
+                    Point3="166.5,19" />
+                  <mssgle:LineSegment
+                    End="166.5,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="99,42"
+          Id="Package\DFT_NSE_Data_Export\Sort"
+          TopLeft="163.5,239.5" />
+        <EdgeLayout
+          Id="Package\DFT_NSE_Data_Export.Paths[Lookup Match Output]"
+          TopLeft="530.666666666667,143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-317.666666666667,96.5"
+              Start="0,0"
+              End="-317.666666666667,89">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3945111492281" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.3945111492281"
+                    Point2="0,39.3945111492281"
+                    Point3="-4,39.3945111492281" />
+                  <mssgle:LineSegment
+                    End="-313.666666666667,39.3945111492281" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-313.666666666667,39.3945111492281"
+                    Point2="-317.666666666667,39.3945111492281"
+                    Point3="-317.666666666667,43.3945111492281" />
+                  <mssgle:LineSegment
+                    End="-317.666666666667,89" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-207.024720052083,44.3945111492281,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_NSE_Data_Export.Paths[Sort Output]"
+          TopLeft="215.25,281.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.5"
+              Start="0,0"
+              End="0,38">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_NSE_Data_Export.Paths[Lookup No Match Output]"
+          TopLeft="566.333333333333,143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.1666666666666,195"
+              Start="0,0"
+              End="49.1666666666666,187.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,75.6054888507718" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,75.6054888507718"
+                    Point2="0,79.6054888507718"
+                    Point3="4,79.6054888507718" />
+                  <mssgle:LineSegment
+                    End="45.1666666666666,79.6054888507718" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.1666666666666,79.6054888507718"
+                    Point2="49.1666666666666,79.6054888507718"
+                    Point3="49.1666666666666,83.6054888507718" />
+                  <mssgle:LineSegment
+                    End="49.1666666666666,187.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-31.2230533854167,84.6054888507718,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_NSE_Data_Export\DST_NSE_Data">
+    design-time-name="Package\DFT_NSE_Data_Export\DST_NSEData 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_NSE_Data_Export\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[SecurityMaster]</Value>
+      </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_NSE_Data_Export\DST_NSEData">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

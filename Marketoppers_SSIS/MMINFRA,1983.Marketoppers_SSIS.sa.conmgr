@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MMINFRA,1983.Marketoppers_SSIS.sa"
+  DTS:DTSID="{4170AF87-BCA4-4689-8D3F-9D6C56053204}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=MMINFRA,1983;User ID=sa;Initial Catalog=Marketoppers_SSIS;Persist Security Info=True;Encrypt=False;Application Name=SSIS-Package1-{4170AF87-BCA4-4689-8D3F-9D6C56053204}MMINFRA,1983.Marketoppers_SSIS.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEpkRxsOTNU2JSx7AfFN98gAAAAACAAAAAAAQZgAAAAEAACAAAABRhblLtdjYOEUa2vz1nU7WNCEJXbqjNyO4ad4EiLAw6gAAAAAOgAAAAAIAACAAAABuDdVWhQNi2ka2wB8p/URChFUqdSxwOpYsSR4+WK1BxoAAAACr7DNiRqTtYfzpgGvLw6ckMhofd5pvVYPacCTFOTWkp0XgI4qTHu5XLYgqHIJMzDGoTj6aoSntGUXMEYgD6xsS8jzsdPvpifX9YjBgKUoZ4FchggIxxTL+L0X1yV3tg/1eXf5M2B845bFBiOYlhwNIK8Ra+B2qIgcjwSnnZ4DWnkAAAAC6N/Rrbg6pby3xOs6jMq5aYubYS2F/X7dbz/nowM2cGP9vBGkuSbauX2XQmuyC+DQxgFz4tbFjvmuRNJTvTmfq</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

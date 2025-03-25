@@ -7,20 +7,20 @@
   DTS:CreatorName="MAGNUSMINDS005\MagnusMinds"
   DTS:DTSID="{91F8F81A-927D-48CE-AFC7-0DC84F9B6220}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{02205E4F-35BF-4B74-8311-5FC728BB91C5}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{A6FA21FE-BA8E-423A-A6D3-22BF7501C2C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[FFC_SecurityMasterFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{D9E322AF-AF80-422E-8353-83A88F8CA757}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:ObjectName="FFC_SecurityMasterFile">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Projects\SSIS Data Merge Assignment\SecurityMaster.csv">
+          DTS:ConnectionString="E:\Projects\SSISDataMergeAssignment\SSIS_Folder_Structure\MasterData\SecurityMaster_masked.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -38,7 +38,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="SecID"
-              DTS:DTSID="{C52CF812-4BE3-4DCD-89D7-1CE8124B8FC1}"
+              DTS:DTSID="{39CCE73A-E68A-47C1-A625-0B1209267933}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SCRIP_NAME"
-              DTS:DTSID="{FBC72E71-7E60-469B-973C-1995DD2F49DE}"
+              DTS:DTSID="{80D16F39-66F8-43F5-8111-A3CD64B501CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LotSize"
-              DTS:DTSID="{BEA8B4EA-6DF5-460A-BFA3-F898FBCF0AF2}"
+              DTS:DTSID="{6BC6334D-1C87-4B94-B316-705F8B80E2BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -63,7 +63,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ExchangeID"
-              DTS:DTSID="{945A1EE2-9D48-4595-AF9E-617EDF49AA9C}"
+              DTS:DTSID="{CD3525C9-224C-447E-9C83-1BB0B37C2ABD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MaxExposure"
-              DTS:DTSID="{3381DC10-0158-4423-B3E5-2DE78448F6E1}"
+              DTS:DTSID="{88B7CECA-26C9-4BE0-9678-F3AFD8DD128A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -79,7 +79,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Industry_Id"
-              DTS:DTSID="{3B0B3DB9-7F4C-45AF-9163-93B98845D694}"
+              DTS:DTSID="{0D849384-E66B-45B7-A0F6-C4F66A4210E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="MF_Cash"
-              DTS:DTSID="{BF052694-5833-4F0E-8B54-BB19570409D7}"
+              DTS:DTSID="{903187BB-6322-43BF-B861-C593C2F66CE2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="MF_Fut"
-              DTS:DTSID="{A0D795D3-38F9-458A-8875-4CE0BCD98EBF}"
+              DTS:DTSID="{428399AF-E6E2-4252-B995-5D4D5DD4D79A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cash_Scrip_Code"
-              DTS:DTSID="{EAB4F2DF-BAB2-4CBF-8E55-FEA7192B9854}"
+              DTS:DTSID="{6D5284A0-84D9-4DB5-9679-4892B3728ECD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DevisionValue"
-              DTS:DTSID="{B694ED44-72A6-4E5D-A62E-A983AC083BEC}"
+              DTS:DTSID="{31C07D68-FC4B-4CD7-B4EF-3BDFE0413B4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,26 +121,9 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LINKNAME"
-              DTS:DTSID="{6A16E9BD-0B1C-4465-992D-EE1AFF4E287E}"
+              DTS:DTSID="{29C43FB1-8DF2-4B61-8537-3335A79F54F9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{22073FB6-EABB-4079-BF13-B43FA3408AB4}"
-      DTS:ObjectName="MMINFRA,1983.Marketoppers_SSIS.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MMINFRA,1983;User ID=sa;Initial Catalog=Marketoppers_SSIS;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{22073FB6-EABB-4079-BF13-B43FA3408AB4}MMINFRA,1983.Marketoppers_SSIS.sa;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwA5g4wwBVEC7I/e4Lcj2MgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC4/BAbs/TDEzFxXw0wKJ5zNFbRhzTnUd98dS2Z7PIAjwAAAAAOgAAAAAIAACAAAADcORxhRqBcpQFrSjw2ppZpBKdwHjzvVrvgmqu3Bel0lSAAAADwWzZF4A3QmHdFxXalc/uE0lERT4pHwkUvFqIE93YB70AAAAAUoPc2JXR8vLHzXF0WmLXtpE/Hz2bk8H3ew3vuWMIvtUiceEALmabDdygMijIr7056WVyUGt3OJ0K1NlwuQKOd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -163,199 +146,177 @@
           <components>
             <component
               refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
               name="DST_SecurityMaster"
               usesDispositions="true"
-              version="4">
+              version="2">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
                   dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[SecurityMaster]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."SecurityMaster"</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
                 <property
                   dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
                 <property
                   dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
+                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Connections[IDbConnection]"
+                  connectionManagerID="{4170AF87-BCA4-4689-8D3F-9D6C56053204}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
+                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
-                  name="OLE DB Destination Input">
+                  name="ADO NET Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[SecID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[SecID]"
                       cachedDataType="i8"
                       cachedName="SecID"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[SecID]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[SCRIP_NAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[SCRIP_NAME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="SCRIP_NAME"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[SCRIP_NAME]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[SCRIP_NAME]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[LotSize]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[LotSize]"
                       cachedDataType="i4"
                       cachedName="LotSize"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[LotSize]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[LotSize]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[ExchangeID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[ExchangeID]"
                       cachedDataType="i4"
                       cachedName="ExchangeID"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[ExchangeID]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[ExchangeID]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[MaxExposure]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[MaxExposure]"
                       cachedDataType="i4"
                       cachedName="MaxExposure"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MaxExposure]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MaxExposure]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[Industry_Id]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[Industry_Id]"
                       cachedDataType="i4"
                       cachedName="Industry_Id"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[Industry_Id]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[Industry_Id]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[MF_Cash]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[MF_Cash]"
                       cachedDataType="r8"
                       cachedName="MF_Cash"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MF_Cash]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MF_Cash]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[MF_Fut]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[MF_Fut]"
                       cachedDataType="r8"
                       cachedName="MF_Fut"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MF_Fut]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MF_Fut]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[Cash_Scrip_Code]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[Cash_Scrip_Code]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Cash_Scrip_Code"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[Cash_Scrip_Code]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[Cash_Scrip_Code]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[DevisionValue]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[DevisionValue]"
                       cachedDataType="i4"
                       cachedName="DevisionValue"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[DevisionValue]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[DevisionValue]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]" />
                     <inputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].Columns[LINKNAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].Columns[LINKNAME]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="LINKNAME"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[LINKNAME]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]" />
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[LINKNAME]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[SecID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[Seq]"
+                      dataType="i8"
+                      name="Seq" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
                       dataType="i8"
                       name="SecID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[SCRIP_NAME]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[SCRIP_NAME]"
+                      dataType="wstr"
                       length="50"
                       name="SCRIP_NAME" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[LotSize]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[LotSize]"
                       dataType="i4"
                       name="LotSize" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[ExchangeID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[ExchangeID]"
                       dataType="i4"
                       name="ExchangeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MaxExposure]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MaxExposure]"
                       dataType="i4"
                       name="MaxExposure" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[Industry_Id]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[Industry_Id]"
                       dataType="i4"
                       name="Industry_Id" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MF_Cash]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MF_Cash]"
                       dataType="r8"
                       name="MF_Cash" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[MF_Fut]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[MF_Fut]"
                       dataType="r8"
                       name="MF_Fut" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[Cash_Scrip_Code]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[Cash_Scrip_Code]"
+                      dataType="wstr"
                       length="50"
                       name="Cash_Scrip_Code" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[DevisionValue]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[DevisionValue]"
                       dataType="i4"
                       name="DevisionValue" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input].ExternalColumns[LINKNAME]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input].ExternalColumns[LINKNAME]"
+                      dataType="wstr"
                       length="50"
                       name="LINKNAME" />
                   </externalMetadataColumns>
@@ -363,22 +324,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[ADO NET Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input]">
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -387,12 +348,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster"
+              refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="16393"
-              name="SC_SecurityMaster"
+              name="SRC_SecurityMaster"
               usesDispositions="true"
               version="1">
               <properties>
@@ -407,23 +368,23 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FFC_SecurityMasterFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[FFC_SecurityMasterFile]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output]"
+                  refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SecID]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SecID]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SecID]"
                       name="SecID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -438,14 +399,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SCRIP_NAME]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SCRIP_NAME]"
                       length="50"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[SCRIP_NAME]"
                       name="SCRIP_NAME"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -460,12 +421,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LotSize]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LotSize]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LotSize]"
                       name="LotSize"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -480,12 +441,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[ExchangeID]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[ExchangeID]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[ExchangeID]"
                       name="ExchangeID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -500,12 +461,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MaxExposure]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MaxExposure]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MaxExposure]"
                       name="MaxExposure"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -520,12 +481,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Industry_Id]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Industry_Id]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Industry_Id]"
                       name="Industry_Id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -540,12 +501,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Cash]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Cash]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Cash]"
                       name="MF_Cash"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -560,12 +521,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Fut]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Fut]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[MF_Fut]"
                       name="MF_Fut"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -580,14 +541,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Cash_Scrip_Code]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Cash_Scrip_Code]"
                       length="50"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[Cash_Scrip_Code]"
                       name="Cash_Scrip_Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -602,12 +563,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[DevisionValue]"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[DevisionValue]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[DevisionValue]"
                       name="DevisionValue"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -622,14 +583,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LINKNAME]"
+                      externalMetadataColumnId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LINKNAME]"
                       length="50"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].Columns[LINKNAME]"
                       name="LINKNAME"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -647,51 +608,51 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SecID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SecID]"
                       dataType="i8"
                       name="SecID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SCRIP_NAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[SCRIP_NAME]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="SCRIP_NAME" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LotSize]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LotSize]"
                       dataType="i4"
                       name="LotSize" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[ExchangeID]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[ExchangeID]"
                       dataType="i4"
                       name="ExchangeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MaxExposure]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MaxExposure]"
                       dataType="i4"
                       name="MaxExposure" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Industry_Id]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Industry_Id]"
                       dataType="i4"
                       name="Industry_Id" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Cash]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Cash]"
                       dataType="r8"
                       name="MF_Cash" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Fut]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[MF_Fut]"
                       dataType="r8"
                       name="MF_Fut" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Cash_Scrip_Code]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[Cash_Scrip_Code]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Cash_Scrip_Code" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[DevisionValue]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[DevisionValue]"
                       dataType="i4"
                       name="DevisionValue" />
                     <externalMetadataColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LINKNAME]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output].ExternalColumns[LINKNAME]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -699,27 +660,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output]"
+                  refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -731,14 +692,41 @@
           <paths>
             <path
               refId="Package\DFT_SecurityMaster_Data_Export.Paths[Flat File Source Output]"
-              endId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster.Inputs[ADO NET Destination Input]"
               name="Flat File Source Output"
-              startId="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster.Outputs[Flat File Source Output]" />
+              startId="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_Truncate_SecurityMaster"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{48408B57-5F8E-4398-B200-177DB54BC813}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_Truncate_SecurityMaster"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4170AF87-BCA4-4689-8D3F-9D6C56053204}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[SecurityMaster]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{D45EDB46-347C-4D6A-BEA4-AB07B33BC748}"
+      DTS:From="Package\EST_Truncate_SecurityMaster"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DFT_SecurityMaster_Data_Export" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -750,11 +738,37 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="247,42"
           Id="Package\DFT_SecurityMaster_Data_Export"
           TopLeft="269,189" />
+        <NodeLayout
+          Size="229,42"
+          Id="Package\EST_Truncate_SecurityMaster"
+          TopLeft="285,68" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="396,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79"
+              Start="0,0"
+              End="0,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -764,27 +778,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="174,42"
-          Id="Package\DFT_SecurityMaster_Data_Export\SC_SecurityMaster"
-          TopLeft="325,46" />
-        <NodeLayout
           Size="180,42"
           Id="Package\DFT_SecurityMaster_Data_Export\DST_SecurityMaster"
-          TopLeft="316,196" />
+          TopLeft="494,151" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\DFT_SecurityMaster_Data_Export\SRC_SecurityMaster"
+          TopLeft="325,46" />
         <EdgeLayout
           Id="Package\DFT_SecurityMaster_Data_Export.Paths[Flat File Source Output]"
-          TopLeft="409,88">
+          TopLeft="416,88">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,108"
+              EndConnector="168,63"
               Start="0,0"
-              End="0,100.5">
+              End="168,55.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,100.5" />
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="164,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="164,31.5"
+                    Point2="168,31.5"
+                    Point3="168,35.5" />
+                  <mssgle:LineSegment
+                    End="168,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -801,11 +827,6 @@
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

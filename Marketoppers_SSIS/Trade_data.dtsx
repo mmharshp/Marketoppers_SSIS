@@ -7,12 +7,12 @@
   DTS:CreatorName="MAGNUSMINDS005\MagnusMinds"
   DTS:DTSID="{75F10355-3BDC-4D70-A53C-3813749F8710}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="16393"
   DTS:ObjectName="Trade_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{EC736CB7-0E48-4F9E-83EA-D369E6CB9135}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{51BEC9DF-29EA-4685-8CBD-A13E8424860F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,236 +30,243 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Projects\SSIS Data Merge Assignment\2012_Full.csv">
+          DTS:ConnectionString="E:\Projects\SSISDataMergeAssignment\2012_Full.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeID"
-              DTS:DTSID="{B1489758-D5E1-4063-9B6B-CC8D23931034}"
+              DTS:DTSID="{6F1CA7A5-4EF4-4C8B-9687-FB68C0AB947E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PortfolioID"
-              DTS:DTSID="{C775908A-158F-4F53-BA5D-97E225672492}"
+              DTS:DTSID="{9560A24C-4F6D-4247-A473-C2796A37A1E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StrategyID"
-              DTS:DTSID="{79C16ED6-405E-4491-8C8C-29C59DC50C76}"
+              DTS:DTSID="{0FEBB8B5-ADB1-44E8-AD64-A9A4871F63FA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SignalID"
-              DTS:DTSID="{7C143488-AAE3-44FA-80F5-72746EB445C2}"
+              DTS:DTSID="{356D1FC4-46FF-4CE5-818F-B3C3B2AE87A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SecID"
-              DTS:DTSID="{44797485-FD3A-4C10-AD8E-48819B473862}"
+              DTS:DTSID="{00E223B6-AAA9-4C03-A5E9-DDDD09D55131}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LongStatus"
-              DTS:DTSID="{319F9D66-B58B-4215-B4B4-6CB66B63B1E4}"
+              DTS:DTSID="{30056631-801B-447E-BE62-3CE13BCEA39E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FutStatus"
-              DTS:DTSID="{68C1D665-6754-4267-AA3A-C4C3A6EC81BC}"
+              DTS:DTSID="{4507FAA0-A45F-4FE1-B40C-59E0E9CF5610}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="11"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IntraDayStatus"
-              DTS:DTSID="{AA86BC7D-2623-46F5-9FFC-25A31E0B6FC9}"
+              DTS:DTSID="{A6D1FBE2-C119-4600-9610-F1B5D2E7FCAE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EntryDatetime"
-              DTS:DTSID="{0DE6FDA8-2FB5-428D-B76E-343CA76B9684}"
+              DTS:DTSID="{77325A04-A992-4B6B-9849-627F99DD0EAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EntryQty"
-              DTS:DTSID="{735558F4-C546-48FE-AE8D-AF42588DE888}"
+              DTS:DTSID="{CEE1150E-637F-40D1-9165-A114A2996FF1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EntryPrice"
-              DTS:DTSID="{B2E7A1D4-86F6-4FE5-A077-BE375DBF14DE}"
+              DTS:DTSID="{DB5BEA75-12FE-41AA-9AB0-1B7C747EA055}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="5"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExitPrice"
-              DTS:DTSID="{CE51A98B-40D5-4790-A420-6513056DF33C}"
+              DTS:DTSID="{A6A64297-91B3-4451-8A7B-11222808EE34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExitDateTime"
-              DTS:DTSID="{45C08885-1AB0-4EF0-95D8-43A46EF23BAE}"
+              DTS:DTSID="{FC08BD90-A88F-4DBD-958A-5C4940B2501B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="6"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SourceFileName"
-              DTS:DTSID="{0B97622C-0EB4-4712-84AC-57D8094A453D}"
+              DTS:DTSID="{83DDA0D2-3648-48FA-9DCF-3F48687B9253}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="13"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UpdatedFileName"
-              DTS:DTSID="{701585A9-E72B-4031-8171-F157BF854C78}"
+              DTS:DTSID="{444E6979-929B-427F-9131-22F03460BCD5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PartialEntryExitFlag"
-              DTS:DTSID="{D74B3773-FA4D-484B-BD59-E529E60C75D5}"
+              DTS:DTSID="{BC2E6128-A406-418A-B7AA-60CB2DDBC018}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ImportId"
-              DTS:DTSID="{1B4812F9-EE07-4679-8307-3D87D7231A26}"
+              DTS:DTSID="{500D9752-65F8-4AE5-8B1E-663EC856983B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ProcessDate"
-              DTS:DTSID="{251829A3-B0D0-479D-B280-5B5A437A5439}"
+              DTS:DTSID="{D029554F-2C4A-4650-A814-E3210829EF13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NeutralID"
-              DTS:DTSID="{43CA8947-2A67-4764-9B37-DCAB002BC9DE}"
+              DTS:DTSID="{A1F713D4-0490-417E-9CC9-62221D7316FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExpiryAction"
-              DTS:DTSID="{E4B4B187-7D10-41FA-9368-64AD306A7B09}"
+              DTS:DTSID="{26336264-B675-4699-BEEB-7C71F20EFBC1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExpiryDate"
-              DTS:DTSID="{D8A96D0B-8EFB-43E3-B673-A553E9B73F75}"
+              DTS:DTSID="{D0445ECC-A69A-4FB9-A71C-4E00B494C846}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OrgTradeID"
-              DTS:DTSID="{22A77B4C-A773-4360-B4BE-46C5FA3B7D05}"
+              DTS:DTSID="{A68CF503-5183-4DF8-BFB8-F7175BFE82C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TimeFrame"
-              DTS:DTSID="{75E1CFD7-80CC-45C9-9220-9F6A09242633}"
+              DTS:DTSID="{C2F17FE3-D6B1-42E9-9414-50F0CE8C6FD2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ViewerID"
-              DTS:DTSID="{A99B1394-2B35-4BAD-8892-DD6F1A62FDED}"
+              DTS:DTSID="{242C9115-F9F2-4F43-91FD-C5416DA77F7A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IsPartial"
-              DTS:DTSID="{FEAB251D-A3DC-4794-909E-068648014EC1}"
+              DTS:DTSID="{7CCFC886-DF1F-4BBF-8D47-A16DC3B7D0EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Factor"
-              DTS:DTSID="{5BF82C75-79E4-4990-B20E-5B9BC33E2556}"
+              DTS:DTSID="{8CB6B844-AEF5-45BD-AAA7-EB69E22C5607}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0FF11292-ECEC-41E8-87C6-94A2EB4AE884}"
-      DTS:ObjectName="MMINFRA,1983.Marketoppers_SSIS.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=MMINFRA,1983;User ID=sa;Initial Catalog=Marketoppers_SSIS;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package-{0FF11292-ECEC-41E8-87C6-94A2EB4AE884}MMINFRA,1983.Marketoppers_SSIS.sa;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwA5g4wwBVEC7I/e4Lcj2MgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABzjeivYjri4von9a3XOBsEh/Ewx1cPGuUPLaS93EHYZQAAAAAOgAAAAAIAACAAAAD2GF9QF445iDbPZeFvgT3p6FElOwj5MGMeuY4EEN7GBCAAAAD6DShiiSvitXJc+xhmstm3omZoQ0qD2f9SHxaJ6iDHHEAAAAC+67dbtBFRXbhy8fCzT0gK9p3gzr5TKCESBavGtdNpxYA5KipNw13FH/XiiTOBq6Ekpcj4kJ/ls9K5fnkiliFH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -281,383 +288,369 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT_Trade_Data_Export\DST_Trade_Data"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="DST_Trade_Data"
+              refId="Package\DFT_Trade_Data_Export\ADO NET Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
               usesDispositions="true"
-              version="4">
+              version="2">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
                   dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Trade_Data_2012]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Trade_Data_2012"</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
                 <property
                   dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
                 <property
                   dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
+                  refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="{4170AF87-BCA4-4689-8D3F-9D6C56053204}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[MMINFRA,1983.Marketoppers_SSIS.sa]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
+                  refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input]"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
-                  name="OLE DB Destination Input">
+                  name="ADO NET Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[TradeID]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[TradeID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="TradeID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[TradeID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TradeID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TradeID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TradeID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[PortfolioID]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PortfolioID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="PortfolioID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[PortfolioID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PortfolioID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PortfolioID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PortfolioID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[StrategyID]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[StrategyID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="StrategyID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[StrategyID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[StrategyID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StrategyID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[StrategyID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[SignalID]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SignalID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="SignalID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SignalID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SignalID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SignalID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SignalID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[SecID]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[SecID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="SecID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SecID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SecID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SecID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[LongStatus]"
-                      cachedDataType="bool"
-                      cachedName="LongStatus"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[LongStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[LongStatus]" />
-                    <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[FutStatus]"
-                      cachedDataType="bool"
-                      cachedName="FutStatus"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[FutStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[FutStatus]" />
-                    <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[IntraDayStatus]"
-                      cachedDataType="bool"
-                      cachedName="IntraDayStatus"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[IntraDayStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IntraDayStatus]" />
-                    <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[EntryDatetime]"
-                      cachedDataType="date"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EntryDatetime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EntryDatetime"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryDatetime]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryDatetime]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryDatetime]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryDatetime]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[EntryQty]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EntryQty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EntryQty"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryQty]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryQty]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryQty]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryQty]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[EntryPrice]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[EntryPrice]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EntryPrice"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryPrice]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryPrice]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryPrice]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryPrice]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ExitPrice]"
-                      cachedDataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ExitPrice]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ExitPrice"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExitPrice]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitPrice]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExitPrice]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitPrice]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ExitDateTime]"
-                      cachedDataType="date"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ExitDateTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ExitDateTime"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExitDateTime]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitDateTime]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExitDateTime]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitDateTime]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[SourceFileName]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[PartialEntryExitFlag]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="6"
-                      cachedName="SourceFileName"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SourceFileName]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SourceFileName]" />
-                    <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[UpdatedFileName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="13"
-                      cachedName="UpdatedFileName"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedFileName]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[UpdatedFileName]" />
-                    <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[PartialEntryExitFlag]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="PartialEntryExitFlag"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[PartialEntryExitFlag]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PartialEntryExitFlag]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ImportId]"
-                      cachedDataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ImportId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ImportId"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ImportId]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ImportId]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ImportId]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ImportId]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ProcessDate]"
-                      cachedDataType="dbDate"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ProcessDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ProcessDate"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ProcessDate]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ProcessDate]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ProcessDate]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ProcessDate]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[NeutralID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[NeutralID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="NeutralID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[NeutralID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[NeutralID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NeutralID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[NeutralID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ExpiryAction]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ExpiryAction]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="ExpiryAction"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExpiryAction]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryAction]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExpiryAction]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryAction]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ExpiryDate]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ExpiryDate]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="ExpiryDate"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExpiryDate]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryDate]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExpiryDate]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryDate]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[OrgTradeID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[OrgTradeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="OrgTradeID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[OrgTradeID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[OrgTradeID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[OrgTradeID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[OrgTradeID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[TimeFrame]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[TimeFrame]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="TimeFrame"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[TimeFrame]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TimeFrame]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TimeFrame]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TimeFrame]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[ViewerID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[ViewerID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="ViewerID"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ViewerID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ViewerID]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ViewerID]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ViewerID]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[IsPartial]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IsPartial]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="IsPartial"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[IsPartial]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IsPartial]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IsPartial]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IsPartial]" />
                     <inputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].Columns[Factor]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Factor]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="50"
                       cachedName="Factor"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[Factor]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[Factor]" />
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Factor]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[Factor]" />
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[LongStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LongStatus"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LongStatus]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[LongStatus]" />
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[FutStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FutStatus"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FutStatus]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[FutStatus]" />
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[IntraDayStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IntraDayStatus"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IntraDayStatus]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IntraDayStatus]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[TradeID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Seq]"
+                      dataType="i8"
+                      name="Seq" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TradeID]"
                       dataType="i8"
                       name="TradeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[PortfolioID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PortfolioID]"
                       dataType="i8"
                       name="PortfolioID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[StrategyID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[StrategyID]"
                       dataType="i8"
                       name="StrategyID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SignalID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SignalID]"
                       dataType="i8"
                       name="SignalID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SecID]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SecID]"
                       dataType="i8"
                       name="SecID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[LongStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[LongStatus]"
+                      dataType="wstr"
+                      length="5"
                       name="LongStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[FutStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[FutStatus]"
+                      dataType="wstr"
+                      length="5"
                       name="FutStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[IntraDayStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IntraDayStatus]"
+                      dataType="wstr"
+                      length="5"
                       name="IntraDayStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryDatetime]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryDatetime]"
                       dataType="dbTimeStamp"
                       name="EntryDatetime" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryQty]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryQty]"
+                      dataType="r8"
                       name="EntryQty" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[EntryPrice]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[EntryPrice]"
                       dataType="r8"
                       name="EntryPrice" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExitPrice]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExitPrice]"
                       dataType="r8"
                       name="ExitPrice" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExitDateTime]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExitDateTime]"
                       dataType="dbTimeStamp"
                       name="ExitDateTime" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[SourceFileName]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[SourceFileName]"
+                      dataType="wstr"
                       length="6"
                       name="SourceFileName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[UpdatedFileName]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[UpdatedFileName]"
+                      dataType="wstr"
                       length="13"
                       name="UpdatedFileName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[PartialEntryExitFlag]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[PartialEntryExitFlag]"
+                      dataType="wstr"
                       length="255"
                       name="PartialEntryExitFlag" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ImportId]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ImportId]"
                       dataType="i8"
                       name="ImportId" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ProcessDate]"
-                      dataType="wstr"
-                      length="10"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ProcessDate]"
+                      dataType="dbTimeStamp"
                       name="ProcessDate" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[NeutralID]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[NeutralID]"
+                      dataType="wstr"
                       length="255"
                       name="NeutralID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExpiryAction]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExpiryAction]"
+                      dataType="wstr"
                       length="255"
                       name="ExpiryAction" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ExpiryDate]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ExpiryDate]"
+                      dataType="wstr"
                       length="255"
                       name="ExpiryDate" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[OrgTradeID]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[OrgTradeID]"
+                      dataType="wstr"
                       length="255"
                       name="OrgTradeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[TimeFrame]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[TimeFrame]"
+                      dataType="wstr"
                       length="255"
                       name="TimeFrame" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[ViewerID]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ViewerID]"
+                      dataType="wstr"
                       length="255"
                       name="ViewerID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[IsPartial]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[IsPartial]"
+                      dataType="wstr"
                       length="255"
                       name="IsPartial" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input].ExternalColumns[Factor]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Factor]"
+                      dataType="wstr"
                       length="255"
                       name="Factor" />
                   </externalMetadataColumns>
@@ -665,22 +658,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input]">
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Trade_Data_Export\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_Trade_Data_Export\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Trade_Data_Export\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -689,12 +682,138 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data"
+              refId="Package\DFT_Trade_Data_Export\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input].Columns[LongStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LongStatus"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[LongStatus]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[LongStatus]} == "Wuxh" ? 1 : 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LongStatus == "Wuxh" ? 1 : 0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input].Columns[FutStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FutStatus"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[FutStatus]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[FutStatus]} == "Wuxh" ? 1 : 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">FutStatus == "Wuxh" ? 1 : 0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input].Columns[IntraDayStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IntraDayStatus"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IntraDayStatus]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IntraDayStatus]} == "Wuxh" ? 1 : 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">IntraDayStatus == "Wuxh" ? 1 : 0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Trade_Data_Export\Flat File Source 1"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="16393"
-              name="SRC_Trade_Data"
+              name="Flat File Source 1"
               usesDispositions="true"
               version="1">
               <properties>
@@ -709,23 +828,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Connections[FlatFileConnection]"
+                  refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output]"
+                  refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TradeID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TradeID]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[TradeID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TradeID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[TradeID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TradeID]"
                       name="TradeID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -740,12 +861,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PortfolioID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PortfolioID]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[PortfolioID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PortfolioID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[PortfolioID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PortfolioID]"
                       name="PortfolioID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -760,12 +883,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[StrategyID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[StrategyID]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[StrategyID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[StrategyID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[StrategyID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[StrategyID]"
                       name="StrategyID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -780,12 +905,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SignalID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SignalID]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SignalID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SignalID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SignalID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SignalID]"
                       name="SignalID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -800,12 +927,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SecID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SecID]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SecID]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SecID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SecID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SecID]"
                       name="SecID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -820,12 +949,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[LongStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[LongStatus]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[LongStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[LongStatus]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[LongStatus]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[LongStatus]"
                       name="LongStatus"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -840,12 +971,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[FutStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[FutStatus]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[FutStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[FutStatus]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[FutStatus]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[FutStatus]"
                       name="FutStatus"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -860,12 +993,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IntraDayStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IntraDayStatus]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[IntraDayStatus]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IntraDayStatus]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[IntraDayStatus]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IntraDayStatus]"
                       name="IntraDayStatus"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -880,12 +1015,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryDatetime]"
-                      dataType="date"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryDatetime]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryDatetime]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryDatetime]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryDatetime]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryDatetime]"
                       name="EntryDatetime"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -900,12 +1037,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryQty]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryQty]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryQty]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryQty]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryQty]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryQty]"
                       name="EntryQty"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -920,12 +1059,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryPrice]"
-                      dataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryPrice]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryPrice]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[EntryPrice]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryPrice]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[EntryPrice]"
                       name="EntryPrice"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -940,12 +1081,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitPrice]"
-                      dataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitPrice]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExitPrice]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitPrice]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExitPrice]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitPrice]"
                       name="ExitPrice"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -960,12 +1103,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitDateTime]"
-                      dataType="date"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitDateTime]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExitDateTime]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExitDateTime]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExitDateTime]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExitDateTime]"
                       name="ExitDateTime"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -980,14 +1125,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SourceFileName]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SourceFileName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SourceFileName]"
-                      length="6"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[SourceFileName]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SourceFileName]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[SourceFileName]"
                       name="SourceFileName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1002,14 +1147,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[UpdatedFileName]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[UpdatedFileName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[UpdatedFileName]"
-                      length="13"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[UpdatedFileName]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[UpdatedFileName]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[UpdatedFileName]"
                       name="UpdatedFileName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1024,14 +1169,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[PartialEntryExitFlag]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[PartialEntryExitFlag]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[PartialEntryExitFlag]"
                       name="PartialEntryExitFlag"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1046,12 +1191,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ImportId]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ImportId]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ImportId]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ImportId]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ImportId]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ImportId]"
                       name="ImportId"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1066,12 +1213,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ProcessDate]"
-                      dataType="dbDate"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ProcessDate]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ProcessDate]"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ProcessDate]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ProcessDate]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ProcessDate]"
                       name="ProcessDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1086,14 +1235,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[NeutralID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[NeutralID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[NeutralID]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[NeutralID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[NeutralID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[NeutralID]"
                       name="NeutralID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1108,14 +1257,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryAction]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryAction]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExpiryAction]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryAction]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExpiryAction]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryAction]"
                       name="ExpiryAction"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1130,14 +1279,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryDate]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryDate]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExpiryDate]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ExpiryDate]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExpiryDate]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ExpiryDate]"
                       name="ExpiryDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1152,14 +1301,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[OrgTradeID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[OrgTradeID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[OrgTradeID]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[OrgTradeID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[OrgTradeID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[OrgTradeID]"
                       name="OrgTradeID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1174,14 +1323,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TimeFrame]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TimeFrame]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[TimeFrame]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[TimeFrame]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[TimeFrame]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[TimeFrame]"
                       name="TimeFrame"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1196,14 +1345,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ViewerID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ViewerID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ViewerID]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[ViewerID]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ViewerID]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[ViewerID]"
                       name="ViewerID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1218,14 +1367,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IsPartial]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IsPartial]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[IsPartial]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[IsPartial]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[IsPartial]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[IsPartial]"
                       name="IsPartial"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1240,14 +1389,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[Factor]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[Factor]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[Factor]"
-                      length="255"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].Columns[Factor]"
+                      externalMetadataColumnId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Factor]"
+                      length="50"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].Columns[Factor]"
                       name="Factor"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1265,155 +1414,185 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[TradeID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[TradeID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="TradeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[PortfolioID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[PortfolioID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="PortfolioID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[StrategyID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[StrategyID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="StrategyID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SignalID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SignalID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="SignalID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SecID]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SecID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="SecID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[LongStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[LongStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="LongStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[FutStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[FutStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="FutStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[IntraDayStatus]"
-                      dataType="bool"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[IntraDayStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="IntraDayStatus" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryDatetime]"
-                      dataType="date"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryDatetime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="EntryDatetime" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryQty]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryQty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="EntryQty" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[EntryPrice]"
-                      dataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[EntryPrice]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="EntryPrice" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExitPrice]"
-                      dataType="r8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExitPrice]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="ExitPrice" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExitDateTime]"
-                      dataType="date"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExitDateTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="ExitDateTime" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[SourceFileName]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[SourceFileName]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="50"
                       name="SourceFileName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[UpdatedFileName]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[UpdatedFileName]"
                       codePage="1252"
                       dataType="str"
-                      length="13"
+                      length="50"
                       name="UpdatedFileName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[PartialEntryExitFlag]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[PartialEntryExitFlag]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="PartialEntryExitFlag" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ImportId]"
-                      dataType="i8"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ImportId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="ImportId" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ProcessDate]"
-                      dataType="dbDate"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ProcessDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="ProcessDate" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[NeutralID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[NeutralID]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="NeutralID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExpiryAction]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExpiryAction]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="ExpiryAction" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ExpiryDate]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ExpiryDate]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="ExpiryDate" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[OrgTradeID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[OrgTradeID]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="OrgTradeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[TimeFrame]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[TimeFrame]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="TimeFrame" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[ViewerID]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[ViewerID]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="ViewerID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[IsPartial]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[IsPartial]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="IsPartial" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output].ExternalColumns[Factor]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Factor]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="50"
                       name="Factor" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output]"
+                  refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="65001"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1424,15 +1603,47 @@
           </components>
           <paths>
             <path
+              refId="Package\DFT_Trade_Data_Export.Paths[Derived Column Output]"
+              endId="Package\DFT_Trade_Data_Export\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Derived Column Output"
+              startId="Package\DFT_Trade_Data_Export\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\DFT_Trade_Data_Export.Paths[Flat File Source Output]"
-              endId="Package\DFT_Trade_Data_Export\DST_Trade_Data.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT_Trade_Data_Export\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
-              startId="Package\DFT_Trade_Data_Export\SRC_Trade_Data.Outputs[Flat File Source Output]" />
+              startId="Package\DFT_Trade_Data_Export\Flat File Source 1.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EST_Truncate_SecurityMaster"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{4c706967-d72a-4a03-886d-49d2753a1788}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EST_Truncate_SecurityMaster"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4170AF87-BCA4-4689-8D3F-9D6C56053204}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Trade_Data_2012]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{A8D4EB59-6128-4351-A95B-FE355A840B49}"
+      DTS:From="Package\EST_Truncate_SecurityMaster"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\DFT_Trade_Data_Export" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -1444,11 +1655,49 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="202,42"
           Id="Package\DFT_Trade_Data_Export"
           TopLeft="335,195" />
+        <NodeLayout
+          Size="229,42"
+          Id="Package\EST_Truncate_SecurityMaster"
+          TopLeft="303,66" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="417.5,108">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.5,87"
+              Start="0,0"
+              End="18.5,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.5"
+                    Point2="0,43.5"
+                    Point3="4,43.5" />
+                  <mssgle:LineSegment
+                    End="14.5,43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.5,43.5"
+                    Point2="18.5,43.5"
+                    Point3="18.5,47.5" />
+                  <mssgle:LineSegment
+                    End="18.5,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1456,29 +1705,55 @@
     design-time-name="Package\DFT_Trade_Data_Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="165,42"
-          Id="Package\DFT_Trade_Data_Export\DST_Trade_Data"
-          TopLeft="332.5,284.5" />
+          Id="Package\DFT_Trade_Data_Export\Flat File Source 1"
+          TopLeft="404,102" />
         <NodeLayout
-          Size="166,42"
-          Id="Package\DFT_Trade_Data_Export\SRC_Trade_Data"
-          TopLeft="337,68" />
+          Size="186,42"
+          Id="Package\DFT_Trade_Data_Export\ADO NET Destination"
+          TopLeft="400,279" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\DFT_Trade_Data_Export\Derived Column"
+          TopLeft="411,183" />
         <EdgeLayout
           Id="Package\DFT_Trade_Data_Export.Paths[Flat File Source Output]"
-          TopLeft="417.5,110">
+          TopLeft="488.25,144">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,174.5"
+              EndConnector="0,39"
               Start="0,0"
-              End="0,167">
+              End="0,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,167" />
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Trade_Data_Export.Paths[Derived Column Output]"
+          TopLeft="491.5,225">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1491,15 +1766,10 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Trade_Data_Export\DST_Trade_Data">
+    design-time-name="Package\DFT_Trade_Data_Export\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
